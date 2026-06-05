@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    SUMO simulation configuration for the 3x3 grid network.
+    Run with: sumo -c sumo_network/grid.sumocfg
+    Or with GUI: sumo-gui -c sumo_network/grid.sumocfg
+-->
+<configuration>
+    <input>
+        <net-file value="network.net.xml"/>
+        <route-files value="routes.rou.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <step-length value="1"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+        <time-to-teleport value="300"/>
+        <collision.action value="warn"/>
+        <routing-algorithm value="dijkstra"/>
+    </processing>
+
+    <output>
+        <summary-output value="../results/summary.xml"/>
+        <tripinfo-output value="../results/tripinfo.xml"/>
+        <queue-output value="../results/queues.xml"/>
+        <queue-output.period value="60"/>
+    </output>
+
+    <gui_only>
+        <start value="true"/>
+        <delay value="50"/>
+    </gui_only>
+</configuration>

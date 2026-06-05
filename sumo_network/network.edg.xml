@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Edge file for the 3x3 grid network.
+    Each edge is bidirectional (we define both directions).
+    numLanes=2, speed=13.89 m/s (~50 km/h)
+-->
+<edges>
+    <!-- Horizontal edges: Row A (top) -->
+    <edge id="A0_A1" from="A0" to="A1" numLanes="2" speed="13.89"/>
+    <edge id="A1_A0" from="A1" to="A0" numLanes="2" speed="13.89"/>
+    <edge id="A1_A2" from="A1" to="A2" numLanes="2" speed="13.89"/>
+    <edge id="A2_A1" from="A2" to="A1" numLanes="2" speed="13.89"/>
+
+    <!-- Horizontal edges: Row B (middle) -->
+    <edge id="B0_B1" from="B0" to="B1" numLanes="2" speed="13.89"/>
+    <edge id="B1_B0" from="B1" to="B0" numLanes="2" speed="13.89"/>
+    <edge id="B1_B2" from="B1" to="B2" numLanes="2" speed="13.89"/>
+    <edge id="B2_B1" from="B2" to="B1" numLanes="2" speed="13.89"/>
+
+    <!-- Horizontal edges: Row C (bottom) -->
+    <edge id="C0_C1" from="C0" to="C1" numLanes="2" speed="13.89"/>
+    <edge id="C1_C0" from="C1" to="C0" numLanes="2" speed="13.89"/>
+    <edge id="C1_C2" from="C1" to="C2" numLanes="2" speed="13.89"/>
+    <edge id="C2_C1" from="C2" to="C1" numLanes="2" speed="13.89"/>
+
+    <!-- Vertical edges: Column 0 (left) -->
+    <edge id="A0_B0" from="A0" to="B0" numLanes="2" speed="13.89"/>
+    <edge id="B0_A0" from="B0" to="A0" numLanes="2" speed="13.89"/>
+    <edge id="B0_C0" from="B0" to="C0" numLanes="2" speed="13.89"/>
+    <edge id="C0_B0" from="C0" to="B0" numLanes="2" speed="13.89"/>
+
+    <!-- Vertical edges: Column 1 (middle) -->
+    <edge id="A1_B1" from="A1" to="B1" numLanes="2" speed="13.89"/>
+    <edge id="B1_A1" from="B1" to="A1" numLanes="2" speed="13.89"/>
+    <edge id="B1_C1" from="B1" to="C1" numLanes="2" speed="13.89"/>
+    <edge id="C1_B1" from="C1" to="B1" numLanes="2" speed="13.89"/>
+
+    <!-- Vertical edges: Column 2 (right) -->
+    <edge id="A2_B2" from="A2" to="B2" numLanes="2" speed="13.89"/>
+    <edge id="B2_A2" from="B2" to="A2" numLanes="2" speed="13.89"/>
+    <edge id="B2_C2" from="B2" to="C2" numLanes="2" speed="13.89"/>
+    <edge id="C2_B2" from="C2" to="B2" numLanes="2" speed="13.89"/>
+
+    <!-- Fringe entry/exit edges (top) -->
+    <edge id="in_top_A0" from="top_A0" to="A0" numLanes="2" speed="13.89"/>
+    <edge id="out_top_A0" from="A0" to="top_A0" numLanes="2" speed="13.89"/>
+    <edge id="in_top_A1" from="top_A1" to="A1" numLanes="2" speed="13.89"/>
+    <edge id="out_top_A1" from="A1" to="top_A1" numLanes="2" speed="13.89"/>
+    <edge id="in_top_A2" from="top_A2" to="A2" numLanes="2" speed="13.89"/>
+    <edge id="out_top_A2" from="A2" to="top_A2" numLanes="2" speed="13.89"/>
+
+    <!-- Fringe entry/exit edges (bottom) -->
+    <edge id="in_bot_C0" from="bot_C0" to="C0" numLanes="2" speed="13.89"/>
+    <edge id="out_bot_C0" from="C0" to="bot_C0" numLanes="2" speed="13.89"/>
+    <edge id="in_bot_C1" from="bot_C1" to="C1" numLanes="2" speed="13.89"/>
+    <edge id="out_bot_C1" from="C1" to="bot_C1" numLanes="2" speed="13.89"/>
+    <edge id="in_bot_C2" from="bot_C2" to="C2" numLanes="2" speed="13.89"/>
+    <edge id="out_bot_C2" from="C2" to="bot_C2" numLanes="2" speed="13.89"/>
+
+    <!-- Fringe entry/exit edges (left) -->
+    <edge id="in_left_A0" from="left_A0" to="A0" numLanes="2" speed="13.89"/>
+    <edge id="out_left_A0" from="A0" to="left_A0" numLanes="2" speed="13.89"/>
+    <edge id="in_left_B0" from="left_B0" to="B0" numLanes="2" speed="13.89"/>
+    <edge id="out_left_B0" from="B0" to="left_B0" numLanes="2" speed="13.89"/>
+    <edge id="in_left_C0" from="left_C0" to="C0" numLanes="2" speed="13.89"/>
+    <edge id="out_left_C0" from="C0" to="left_C0" numLanes="2" speed="13.89"/>
+
+    <!-- Fringe entry/exit edges (right) -->
+    <edge id="in_right_A2" from="right_A2" to="A2" numLanes="2" speed="13.89"/>
+    <edge id="out_right_A2" from="A2" to="right_A2" numLanes="2" speed="13.89"/>
+    <edge id="in_right_B2" from="right_B2" to="B2" numLanes="2" speed="13.89"/>
+    <edge id="out_right_B2" from="B2" to="right_B2" numLanes="2" speed="13.89"/>
+    <edge id="in_right_C2" from="right_C2" to="C2" numLanes="2" speed="13.89"/>
+    <edge id="out_right_C2" from="C2" to="right_C2" numLanes="2" speed="13.89"/>
+</edges>

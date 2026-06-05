@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-06-05T18:22:06.893013+02:00 by Eclipse SUMO sumo 1.27.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\admin\Desktop\FAF-251\Semester2\AIA\gnn_rl_traffic\sumo_network\network.net.xml"/>
+        <route-files value="C:\Users\admin\Desktop\FAF-251\Semester2\AIA\gnn_rl_traffic\sumo_network\routes.rou.xml"/>
+    </input>
+
+    <output>
+        <queue-output value="C:\Users\admin\Desktop\FAF-251\Semester2\AIA\gnn_rl_traffic\sumo_network\../results/queues.xml"/>
+        <queue-output.period value="60"/>
+        <summary-output value="C:\Users\admin\Desktop\FAF-251\Semester2\AIA\gnn_rl_traffic\sumo_network\../results/summary.xml"/>
+        <tripinfo-output value="C:\Users\admin\Desktop\FAF-251\Semester2\AIA\gnn_rl_traffic\sumo_network\../results/tripinfo.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <step-length value="1"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+        <collision.action value="warn"/>
+        <time-to-teleport value="300"/>
+        <waiting-time-memory value="1000"/>
+    </processing>
+
+    <routing>
+        <routing-algorithm value="dijkstra"/>
+    </routing>
+
+    <report>
+        <no-warnings value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="8817"/>
+    </traci_server>
+
+    <random_number>
+        <random value="true"/>
+    </random_number>
+
+    <gui_only>
+        <start value="true"/>
+        <delay value="50"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+</tripinfos>

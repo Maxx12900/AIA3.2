@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Node file for a 3x3 grid network with 9 intersections.
+    Each node is a traffic-light controlled intersection.
+    Coordinates are in meters.
+-->
+<nodes>
+    <!-- Row 0 (top) -->
+    <node id="A0" x="0"   y="400" type="traffic_light"/>
+    <node id="A1" x="200" y="400" type="traffic_light"/>
+    <node id="A2" x="400" y="400" type="traffic_light"/>
+
+    <!-- Row 1 (middle) -->
+    <node id="B0" x="0"   y="200" type="traffic_light"/>
+    <node id="B1" x="200" y="200" type="traffic_light"/>
+    <node id="B2" x="400" y="200" type="traffic_light"/>
+
+    <!-- Row 2 (bottom) -->
+    <node id="C0" x="0"   y="0"   type="traffic_light"/>
+    <node id="C1" x="200" y="0"   type="traffic_light"/>
+    <node id="C2" x="400" y="0"   type="traffic_light"/>
+
+    <!-- Entry/exit fringe nodes (not controlled) -->
+    <node id="top_A0"   x="0"   y="550" type="priority"/>
+    <node id="top_A1"   x="200" y="550" type="priority"/>
+    <node id="top_A2"   x="400" y="550" type="priority"/>
+    <node id="bot_C0"   x="0"   y="-150" type="priority"/>
+    <node id="bot_C1"   x="200" y="-150" type="priority"/>
+    <node id="bot_C2"   x="400" y="-150" type="priority"/>
+    <node id="left_A0"  x="-150" y="400" type="priority"/>
+    <node id="left_B0"  x="-150" y="200" type="priority"/>
+    <node id="left_C0"  x="-150" y="0"   type="priority"/>
+    <node id="right_A2" x="550"  y="400" type="priority"/>
+    <node id="right_B2" x="550"  y="200" type="priority"/>
+    <node id="right_C2" x="550"  y="0"   type="priority"/>
+</nodes>

@@ -1,0 +1,9 @@
+# Core ML
+torch>=2.0.0
+numpy>=1.24.0
+
+# SUMO interface
+traci>=1.14.0       # or install via SUMO tools path
+
+# Plotting / analysis
+matplotlib>=3.7.0
