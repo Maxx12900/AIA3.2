@@ -51,25 +51,7 @@ SUMO Simulation (TraCI)
 
 ### 1. Install SUMO
 
-**Ubuntu/Debian:**
-```bash
-sudo add-apt-repository ppa:sumo/stable
-sudo apt update
-sudo apt install sumo sumo-tools sumo-gui
-echo 'export SUMO_HOME="/usr/share/sumo"' >> ~/.bashrc
-source ~/.bashrc
-```
-
-**macOS (Homebrew):**
-```bash
-brew install sumo
-echo 'export SUMO_HOME="/opt/homebrew/opt/sumo/share/sumo"' >> ~/.zshrc
-source ~/.zshrc
-```
-
-**Windows:**
-Download the installer from https://sumo.dlr.de/docs/Downloads.php
-Set `SUMO_HOME` to e.g. `C:\Program Files (x86)\Eclipse\Sumo`
+See https://sumo.dlr.de/docs/Downloads.php
 
 ### 2. Install Python dependencies
 
